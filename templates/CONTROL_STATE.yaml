@@ -1,0 +1,81 @@
+# CONTROL_STATE.yaml - Template
+
+## Copy this file to your project and customize
+
+# ============================================
+# GATE STATES
+# ============================================
+
+gate_1:
+  status: PENDING
+  last_processed: null
+  last_result: null
+
+gate_2:
+  status: PENDING
+  last_processed: null
+  last_result: null
+
+# Add more gates as needed...
+
+# ============================================
+# RUN SIGNAL
+# ============================================
+
+run_signal:
+  requested: false
+  request_id: null
+  last_processed: null
+  mode: execute_one_bounded_step
+  constraints:
+    stop_on_blocking_defect: true
+    update_state_after_step: true
+
+# ============================================
+# MEMORY SYNC
+# ============================================
+
+memory:
+  last_consolidation: null
+  significant_events: []
+  consolidation_threshold: 5
+
+# ============================================
+# DECISION TRACKING
+# ============================================
+
+decisions:
+  pending: []
+  completed: []
+  blocked: []
+
+# ============================================
+# AGENT COORDINATION
+# ============================================
+
+agents:
+  active: []
+  last_heartbeat: null
+  coordination_mode: governor_controlled
+
+# ============================================
+# PROGRESS TRACKING
+# ============================================
+
+progress:
+  total_items: 0
+  completed_items: 0
+  blocking_defects: []
+  last_update: null
+
+# ============================================
+# GOVERNOR STATE
+# ============================================
+
+governor:
+  state: IDLE
+  current_rule: null
+  current_action: null
+  iterations: 0
+  started_at: null
+  last_iteration: null

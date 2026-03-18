@@ -1,0 +1,49 @@
+{
+  "name": "anti-agent-sprawl",
+  "version": "1.0.0",
+  "description": "Anti-Agent-Sprawl Pattern: Stateful + Rule-Based + Governor-Controlled coordination for AI agents",
+  "main": "lib/governor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint lib/*.js",
+    "start": "node examples/basic.js"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "sprawl",
+    "coordination",
+    "state-machine",
+    "governor",
+    "anti-pattern",
+    "stateful",
+    "rule-based",
+    "multi-agent"
+  ],
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/anti-agent-sprawl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw/anti-agent-sprawl/issues"
+  },
+  "homepage": "https://github.com/openclaw/anti-agent-sprawl#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "lib/",
+    "templates/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ]
+}
